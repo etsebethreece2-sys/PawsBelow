@@ -1,0 +1,36 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Paws Below</title>
+    <link rel="stylesheet" href="./styles/main.css">
+  </head>
+  <body>
+    <main class="game-shell" aria-label="Paws Below">
+      <canvas id="gameCanvas" width="960" height="640" aria-label="Paws Below game canvas"></canvas>
+
+      <div class="energy-hud" aria-label="Energy">
+        <span>Energy</span>
+        <div class="energy-track" aria-hidden="true">
+          <i id="energyFill"></i>
+        </div>
+      </div>
+    </main>
+
+    <script src="./js/config.js"></script>
+    <script src="./js/utils/math.js"></script>
+    <script src="./js/utils/random.js"></script>
+    <script src="./js/world/tiles.js"></script>
+    <script src="./js/world/world.js"></script>
+    <script src="./js/entities/cat.js"></script>
+    <script src="./js/systems/input.js"></script>
+    <script src="./js/systems/camera.js"></script>
+    <script src="./js/systems/effects.js"></script>
+    <script src="./js/systems/audio.js"></script>
+    <script src="./js/systems/renderer.js"></script>
+    <script src="./js/systems/ui.js"></script>
+    <script src="./js/game-state.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
